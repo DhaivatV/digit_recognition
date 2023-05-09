@@ -26,7 +26,7 @@ if(video.isOpened()):
 
         edged = cv2.Canny(dilation, 50, 250)
 
-        _, contours, hierachy = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        contours, hierachy = cv2.findContours(edged, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
         num_str = ''
         per = ''
